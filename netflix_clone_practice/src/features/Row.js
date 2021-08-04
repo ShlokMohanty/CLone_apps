@@ -1,31 +1,29 @@
-import React, { useState } from 'react';
-import axios from "./axios";
-import "./Row.css";
-function Row({title, fetchUrl, isLargeRow = false }) {
-    const [movies, setMovies] = useState([]);
-    const base_url = "https://image.tmdb.org/t/p/original/";
-    useEffect(()=>{
-        async function fetchData() {
-            const requests = await axios.get(fetchUrl);
-            setMovies(requests.data.results);
-            return requests;
-        }
-        fetchData();
-    }, [fetchUrl]);
-    console.log(movies);
-    return(
-        <div className='row'>
-            <h2>{title}</h2>
-        {movies.map(movie => (
-            <img
-            className={`row_poster ${isLargeRow && "row_posterLarge"} `}
-            key={movie.id}
-             src={`${base_url}${
-                isLargeRow ? movie.poster_path : movie.backdrop_path
-            }`} alt="" />
-        ))}
-        </div>
-    )
+import React from 'react';
+import "./HomeScreen.css";
+import Nav from "./Nav";
+import Banner from "./Banner";
+import Row from "./Row";
+import requests from "./Request";
+
+function HomeScreen() {
+    return ( 
+    <div className="homeScreen">
+        <Nav />
+        <Banner />
+        <Row 
+        title='NETFLIX ORIGINALS'
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
+        />
+        <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+        <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+        <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+        <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+        <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+        <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+        <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+    </div>   
+    );
 }
 
-export default Row;
+export default HomeScreen;
