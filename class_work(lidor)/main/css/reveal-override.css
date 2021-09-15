@@ -1,0 +1,22 @@
+body {
+  height: 86%;
+}
+body:after {
+content: url(../images/in28minutes-logo-small.png);
+position: fixed;
+top: 1em;
+right: 1em;
+}
+
+.reveal h2 {
+  color: brown;
+}
+.reveal h3 {
+  color: #59C8DE;
+}
+.reveal h5 {
+  margin-top: 20px;
+}
+.reveal .slides {
+  text-align: left;
+}
