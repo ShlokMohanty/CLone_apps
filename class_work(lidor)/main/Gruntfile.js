@@ -158,4 +158,6 @@ module.exports = function(grunt) {
   //All css
   grunt.registerTask('css',['sass','autoprefixer','cssmin']);
   //package presentation to archive
-  grunt.registerTask('package')
+  grunt.registerTask('package',['default','zip']);
+  grunt.registerTask('serve',['connect','watch']);
+  grunt.registerTask('test',['jshint','qunit']);
