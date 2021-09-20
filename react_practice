@@ -1,28 +1,29 @@
 <!Doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-<meta name=>
-<meta name=>
-<meta 
-    name="description"
-    content="Web site created using create-react-app"
-/>
-<!--manifest.json provides the meta data used when our web app is installed on a users mobile device or desktop-->
-<link rel="apple-touch-icon" href="%PUBLIC_URL%/manifest.json"/>
-<!--will be replaced with the url of the public folder during the build 
-onloy files inside the public folder can be referenced from the HTML.
-learn how to configure a non-root public url by running `npm run build`-->
-<title>React App</title>
-</head>
-<body>
-    <noscript>you need to enabe JavaScript to run this app</noscript>
-    <div id="root"></div>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width,initial_scale=1" />
+        <meta name="theme-color" content="#000000" /> 
+
+        <meta 
+            name="description"
+            content="Web site created using create-react-app"
+        />
+        <!--manifest.json provides the meta data used when our web app is installed on a users mobile device or desktop-->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/manifest.json"/>
+    <!--will be replaced with the url of the public folder during the build 
+    onloy files inside the public folder can be referenced from the HTML.
+    learn how to configure a non-root public url by running `npm run build`-->
+        <title>React App</title>
+    </head>
+    <body>
+        <noscript>you need to enabe JavaScript to run this app</noscript>
+        <div id="root"></div>
     <!--html file is a template 
     we will be able to see just an empty .we can add webfonts,
     metatags, or analytics to the file.
     begin the development: npm start or yarn start
     production bundle: npm run build or yarn build-->
-</body>
+    </body>
 </html>
