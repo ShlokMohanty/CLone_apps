@@ -13,7 +13,7 @@ public class StudentHelper {
 	Grade A = 91 to 100, Grade B = 51 to 90, Otherwise Grade C
 	Except for Maths where marks to get a Grade are 5 higher than required for other subjects.
 	*/
-  public String getGrade(int mark, boolean isMaths) {
+/*  public String getGrade(int mark, boolean isMaths) {
     String grade ="C";
     if (isGradeA(mark, isMaths))
       grade = "A";
@@ -47,11 +47,11 @@ public class StudentHelper {
      * marks1 - your marks
      * marks2 - your friends marks
     */
-  public String willQualifyForQuiz(int mark1, int mark2, int mark3) {
+ /* public String willQualifyForQuiz(int mark1, int mark2, int mark3) {
     if ((isMaths ? mark1 <= 25 : mark1 <= 20)
         || (isMaths ? mark2 <= 25 : mark2 <= 20)) return "NO";
     if ((isMaths ? mark1 >=85 : mark1 >= 80)
         || (isMaths ? mark2 >= 85 : mark2 >= 80)) return "YES";
     return "MAYBE";
   }
-}
+}*/
