@@ -28,4 +28,22 @@ body,html{
   text-decoration: none;
   color: #fff;
 }
-  
+.banner img{
+    max-width: 100%;
+    vertical-align: top;
+}
+.about-section,.service-section,
+.contact_section{
+    height: 10px;
+    align-items: center;
+
+}
+.about-section{
+    background:#dbfbf4 ;
+}
+.service-section{
+    background: #cfd6f9;
+}
+.contact-section{
+    background: #cfcfcf;
+}
